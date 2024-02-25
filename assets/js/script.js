@@ -25,10 +25,17 @@ function makeCard(color) {
   element.classList.add("cards");
   element.setAttribute("data-color", color);
 
+  element.addEventListener("click", () => {
+    if (awaitingEndOfMove) {
+      return;
+    }
+    element.style.backgroundColor = color;
+  });
+
   return element;
 }
 
-// Make them appear randomly + limit amount of the same color
+// Cards, make them appear randomly + limit amount of the same color
 for (let i = 0; i < cardAnzahl; i++) {
   const randomIndex = Math.floor(Math.random() * chosenColor.length);
   const color = chosenColor[randomIndex];
