@@ -30,6 +30,22 @@ function makeCard(color) {
       return;
     }
     element.style.backgroundColor = color;
+
+    if (!activeCard) {
+      activeCard = element;
+
+      return;
+    }
+
+    awaitingEndOfMove = true;
+
+    setTimeout(() => {
+      element.style.backgroundColor = null;
+      activeCard.style.backgroundColor = null;
+
+      awaitingEndOfMove = false;
+      activeCard = null;
+    }, 500);
   });
 
   return element;
