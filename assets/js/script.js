@@ -19,12 +19,13 @@ let openCount = 0;
 let activeCard = null;
 let awaitingEndOfMove = false;
 
-//card matching and "movement"/"animation??"/"behaviour"
+// card matching and "movement"/"animation??"/"behaviour"
 function makeCard(color) {
   const element = document.createElement("div");
 
   element.classList.add("cards");
   element.setAttribute("data-color", color);
+  element.setAttribute("data-revealed", "false");
 
   element.addEventListener("click", () => {
     if (awaitingEndOfMove) {
@@ -41,6 +42,9 @@ function makeCard(color) {
     const colorMatch = activeCard.getAttribute("data-color");
 
     if (colorMatch === color) {
+      activeCard.setAttribute("data-revealed", "true");
+      element.setAttribute("data-revealed", "true");
+
       awaitingEndOfMove = false;
       activeCard = null;
       openCount += 2;
