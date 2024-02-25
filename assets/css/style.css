@@ -7,15 +7,28 @@ body {
   color: silver;
 }
 
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 40px 60px;
+}
+
 h1 {
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   text-align: center;
-  margin: 20px;
+  margin: 1%;
   color: silver;
 }
 
 /* the playing cards placement */
 .memo-game {
-  margin: 48px auto;
+  margin: 10px auto;
   width: max-content;
   display: grid;
   grid-template-columns: repeat(4, 100px);
@@ -28,4 +41,19 @@ h1 {
   background: black;
   border: 5px solid gray;
   cursor: pointer;
+}
+
+.reset {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  padding: 21px 20px;
+  color: silver;
+  background: black;
+  border: 5px solid gray;
+  text-transform: uppercase;
+}
+
+.reset:focus {
+  color: black;
+  background: silver;
 }
