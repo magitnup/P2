@@ -1,5 +1,5 @@
-//constants first meaning my playingfield, different cards/colors
-//and making sure that every color gets taken only twice
+// Constants first meaning my playingfield, different cards/colors
+// and making sure that every color gets taken only twice
 const memogameContainer = document.querySelector("memo-game");
 const colors = [
   "aqua",
@@ -14,5 +14,17 @@ const colors = [
 const chosenColor = [...colors, ...colors];
 const cardAnzahl = chosenColor.length;
 
-console.log(chosenColor);
-//line 17 was only to check the DevTools 'Console' pannel if the colors actually appeared in the log
+// Game
+let openCount = 0;
+let activeCard = null;
+let awaitingEndOfMove = false;
+
+// Make them appear randomly + limit amount of the same color
+for (let i = 0; i < cardAnzahl; i++) {
+  const randomIndex = Math.floor(Math.random() * chosenColor.length);
+  const color = chosenColor[randomIndex];
+
+  chosenColor.splice(randomIndex, 1);
+
+  console.log(color);
+}
