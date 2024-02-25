@@ -2,14 +2,14 @@
 // and making sure that every color gets taken only twice
 const memogameContainer = document.querySelector(".memo-game");
 const colors = [
-  "aqua",
-  "crimson",
-  "gold",
-  "teal",
-  "maroon",
-  "purple",
-  "silver",
-  "fuchsia",
+  "Magenta",
+  "Lime",
+  "Cyan",
+  "Blue",
+  "Orange",
+  "Red",
+  "Silver",
+  "Indigo",
 ];
 const chosenColor = [...colors, ...colors];
 const cardAnzahl = chosenColor.length;
@@ -28,7 +28,9 @@ function makeCard(color) {
   element.setAttribute("data-revealed", "false");
 
   element.addEventListener("click", () => {
-    if (awaitingEndOfMove) {
+    const revealed = element.getAttribute("data-revealed");
+
+    if (awaitingEndOfMove || revealed === "true" || element === activeCard) {
       return;
     }
     element.style.backgroundColor = color;

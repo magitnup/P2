@@ -3,14 +3,14 @@
 body {
   text-align: center;
   margin: 20px;
-  background: rgba(0, 0, 0, 0.777);
-  color: rgba(200, 200, 200, 0.777);
+  background: rgb(0, 0, 0, 0.777);
+  color: silver;
 }
 
 h1 {
   text-align: center;
   margin: 20px;
-  color: rgba(200, 200, 200, 0.777);
+  color: silver;
 }
 
 /* the playing cards placement */
@@ -25,7 +25,7 @@ h1 {
 /* coloration of the game-/playfield */
 .cards {
   height: 100px;
-  background: rgba(50, 20, 20, 0.777);
-  border: 5px solid rgb(100, 100, 100, 0.777);
+  background: black;
+  border: 5px solid gray;
   cursor: pointer;
 }
