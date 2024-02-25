@@ -4,13 +4,13 @@ body {
   text-align: center;
   margin: 20px;
   background: rgba(0, 0, 0, 0.777);
-  color: rgba(255, 255, 255, 0.777);
+  color: rgba(200, 200, 200, 0.777);
 }
 
 h1 {
   text-align: center;
   margin: 20px;
-  color: rgba(255, 0, 0, 0.777);
+  color: rgba(200, 200, 200, 0.777);
 }
 
 /* the playing cards placement */
