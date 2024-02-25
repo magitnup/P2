@@ -19,6 +19,7 @@ let openCount = 0;
 let activeCard = null;
 let awaitingEndOfMove = false;
 
+//card matching and "movement"/"animation??"/"behaviour"
 function makeCard(color) {
   const element = document.createElement("div");
 
@@ -33,6 +34,20 @@ function makeCard(color) {
 
     if (!activeCard) {
       activeCard = element;
+
+      return;
+    }
+
+    const colorMatch = activeCard.getAttribute("data-color");
+
+    if (colorMatch === color) {
+      awaitingEndOfMove = false;
+      activeCard = null;
+      openCount += 2;
+
+      if (openCount === cardAnzahl) {
+        alert("GOOD JOB!");
+      }
 
       return;
     }
