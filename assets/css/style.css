@@ -1,10 +1,7 @@
 /* rgba(0,0,0,0.777) got nicer tone to it than ... 0.77/0.7 */
 /* I continued with the 777 trend, even thought I didn't notice that big of a change in white/red as in gray */
 body {
-  text-align: center;
-  margin: 20px;
   background: rgb(0, 0, 0, 0.777);
-  color: silver;
 }
 
 .container {
@@ -21,8 +18,7 @@ h1 {
   font-size: 3em;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  text-align: center;
-  margin: 1%;
+  margin: 1px;
   color: silver;
 }
 
@@ -56,4 +52,17 @@ h1 {
 .reset:focus {
   color: black;
   background: silver;
+}
+
+@media (max-width: 600px) {
+  .container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 60px;
+    width: max-content;
+  }
 }
