@@ -34,10 +34,34 @@
 - ## Validator Testing
 
   - ### HTML
-
+    - No errors were found when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fmagitnup.github.io%2Fmatch-em%2F)
   - ### CSS
+    - No errors were found when passing through the official [Jigsaw](http://jigsaw.w3.org/css-validator/validator?lang=en&profile=css3svg&uri=https%3A%2F%2Fmagitnup.github.io%2Fmatch-em%2F&usermedium=all&vextwarning=&warning=1)
   
   - ### JavaScript
+    - No errors were found when passing through the official [Jshint validator](https://jshint.com/)
+      - The following metrics were returned: 
+      - There are 3 functions in this file.
+      - Function with the largest signature take 1 arguments, while the median is 0.
+      - Largest function has 19 statements in it, while the median is 6.
+      - The most complex function has a cyclomatic complexity value of 7 while the median is 1.
 
+  - ### Unfixed Bugs
+    - No unfixed bugs.
 
-favicon.ico: https://pixabay.com/illustrations/question-brain-ideas-brainstorming-2004314/
+- ## Deployment
+  - The site was deployed to GitHub pages. The steps to deploy are as follows:
+    - In the GitHub repository, navigate to the Settings tab 
+    - From the source section drop-down menu, select the Master Branch
+    - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+
+  The live link can be found here - https://magitnup.github.io/match-em/
+
+## Credits
+  - Special Thanks to my sister and mother who were working tiredlessly on my siters VwA (End of Degree Project for highschool)
+  - ### Media
+    - favicon.ico: [PixaBay](https://pixabay.com/illustrations/question-brain-ideas-brainstorming-2004314/)
+
+## Finally
+  - I had a lot of fun playing around with JavaScript and am looking forward to Python!
+  - I think I found something very fun :D
