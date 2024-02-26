@@ -3,7 +3,7 @@
 - This simple memory game, was inspired by the card game we propably all played when we were kids. <br>
   In hopes to relieve some of the stress of daily life and to jump back into childhood memories.
 
-      - ![the game](P2_Memory.png)
+  - ![the game](image.png)
 
 ## Features:
 
