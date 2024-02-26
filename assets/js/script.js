@@ -1,16 +1,7 @@
 // Constants first meaning my playingfield, different cards/colors
 // and making sure that every color gets taken only twice
 const memogameContainer = document.querySelector(".memo-game");
-const colors = [
-  "Magenta",
-  "Lime",
-  "Cyan",
-  "Blue",
-  "Orange",
-  "Red",
-  "Silver",
-  "Indigo",
-];
+const colors = ["Magenta", "Lime", "Cyan", "Blue", "Orange", "Red", "Silver", "Indigo",];
 const chosenColor = [...colors, ...colors];
 const cardAnzahl = chosenColor.length;
 
